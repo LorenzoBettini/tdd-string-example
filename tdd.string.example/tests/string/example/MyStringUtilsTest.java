@@ -2,15 +2,21 @@ package string.example;
 
 import static org.junit.Assert.*;
 
+import org.junit.Before;
 import org.junit.Test;
 
 public class MyStringUtilsTest {
 
+	private MyStringUtils myStringUtils;
+
+	@Before
+	public void setup() {
+		myStringUtils = new MyStringUtils();
+	}
+
 	@Test
 	public void testLeftTrimWithNullString() {
-		MyStringUtils myStringUtils = new MyStringUtils();
-		String result = myStringUtils.leftTrim(null);
-		assertNull(result);
+		assertNull(myStringUtils.leftTrim(null));
 	}
 
 }
