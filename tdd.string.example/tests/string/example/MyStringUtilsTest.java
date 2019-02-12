@@ -48,4 +48,10 @@ public class MyStringUtilsTest {
 	public void testLeftTrimWithAllSpaces() {
 		assertEquals("", myStringUtils.leftTrim("  "));
 	}
+
+	@Test
+	public void testLeftTrimWithSeveralKindsOfWhiteSpaces() {
+		// For documentation only: not used in TDD
+		assertEquals("abc", myStringUtils.leftTrim("\t abc"));
+	}
 }
