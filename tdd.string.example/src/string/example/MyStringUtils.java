@@ -5,8 +5,9 @@ public class MyStringUtils {
 	public String leftTrim(String input) {
 		if (input == null || input.isEmpty())
 			return input;
-		if (input.charAt(0) == ' ')
-			return input.substring(1);
+		int beginIndex = 0;
+		if (input.charAt(beginIndex) == ' ')
+			return input.substring(beginIndex + 1);
 		return input;
 	}
 
