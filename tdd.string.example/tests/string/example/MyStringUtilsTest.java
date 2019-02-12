@@ -43,4 +43,9 @@ public class MyStringUtilsTest {
 	public void testLeftTrimWithSeveralSpaces() {
 		assertEquals("abc", myStringUtils.leftTrim("  abc"));
 	}
+
+	@Test
+	public void testLeftTrimWithAllSpaces() {
+		assertEquals("", myStringUtils.leftTrim("  "));
+	}
 }
