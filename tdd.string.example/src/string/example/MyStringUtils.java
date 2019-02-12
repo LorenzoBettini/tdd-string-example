@@ -7,8 +7,8 @@ public class MyStringUtils {
 			return input;
 		int beginIndex = 0;
 		if (input.charAt(beginIndex) == ' ')
-			return input.substring(beginIndex + 1);
-		return input;
+			beginIndex++;
+		return input.substring(beginIndex);
 	}
 
 }
