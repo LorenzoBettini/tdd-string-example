@@ -28,4 +28,9 @@ public class MyStringUtilsTest {
 	public void testLeftTrimWithOneLeadingSpace() {
 		assertEquals("abc", myStringUtils.leftTrim(" abc"));
 	}
+
+	@Test
+	public void testLeftTrimWithNoLeadingSpace() {
+		assertEquals("abc", myStringUtils.leftTrim("abc"));
+	}
 }
