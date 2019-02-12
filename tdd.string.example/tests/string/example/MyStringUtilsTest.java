@@ -19,4 +19,8 @@ public class MyStringUtilsTest {
 		assertNull(myStringUtils.leftTrim(null));
 	}
 
+	@Test
+	public void testLeftTrimWithEmptyString() {
+		assertEquals("", myStringUtils.leftTrim(""));
+	}
 }
