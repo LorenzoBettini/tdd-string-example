@@ -6,7 +6,8 @@ public class MyStringUtils {
 		if (input == null || input.isEmpty())
 			return input;
 		int beginIndex = 0;
-		while (Character.isWhitespace(input.charAt(beginIndex)))
+		while (beginIndex < input.length() &&
+				Character.isWhitespace(input.charAt(beginIndex)))
 			beginIndex++;
 		return input.substring(beginIndex);
 	}
